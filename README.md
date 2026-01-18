@@ -50,9 +50,10 @@ Laisser la fenêtre précédente ouverte. Ouvrez une nouvelle fenêtre et exécu
 
   ollama list
 
-Exécuter les deux codes qui pour vérifier que les modèles sont bien installés : 
+Exécuter les deux codes qui suivent pour vérifier que les modèles sont bien installés : 
 
   ollama pull mistral
+  
   ollama pull nomic-embed-text
 
 ---
@@ -131,4 +132,5 @@ Pas de citations précises ligne/paragraphe (uniquement du contexte global),
 
 
 PDF scannés (images) non supportés sans OCR.
+
 
