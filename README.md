@@ -67,6 +67,7 @@ Ouvrez le projet avec VS Code. Via le terminal, faites :
 Avant de lancer le projet, ouvrez un nouveau terminal depuis VS Code afin d'installer les bibliothèques nécessaires du fichier requirements. Faites :
 
   pip install -r requirements.txt
+  
   pip install streamlit langchain langchain-community langchain-text-splitters langchain-ollama faiss-cpu pypdf
 
 Lancer le projet en exécutant dans le terminal le code ci-après :
@@ -132,5 +133,6 @@ Pas de citations précises ligne/paragraphe (uniquement du contexte global),
 
 
 PDF scannés (images) non supportés sans OCR.
+
 
 
