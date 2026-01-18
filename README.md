@@ -62,7 +62,7 @@ Exécuter les deux codes qui pour vérifier que les modèles sont bien installé
 
 Ouvrez le projet avec VS Code. Via le terminal, faites :
 
-  git clone "url-du-projet"
+  git clone https://github.com/Jehovahni177/Projet-IA-gen.git
 
 Avant de lancer le projet, ouvrez un nouveau terminal depuis VS Code afin d'installer les bibliothèques nécessaires du fichier requirements. Faites :
 
