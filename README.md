@@ -2,8 +2,7 @@
 
 ## Le concept de l’application 
 
-**Assistant de Révision – Version Turbo** est une application web développée avec **Streamlit** qui permet d’interroger intelligemment un **cours au format PDF** grâce 
-à une approche de type **RAG (Retrieval-Augmented Generation)**.
+**Assistant de Révision – Version Turbo** est une application web développée avec **Streamlit** qui permet d’interroger intelligemment un **cours au format PDF** grâce à une approche de type **RAG (Retrieval-Augmented Generation)**.
 
 L’utilisateur dépose un PDF (cours, polycopié, support de formation), puis pose des questions en langage naturel.  
 L’application :
@@ -62,7 +61,7 @@ Exécuter les deux codes qui pour vérifier que les modèles sont bien installé
 
 Ouvrez le projet avec VS Code. Via le terminal, faites :
 
-  git clone https://github.com/Jehovahni177/Projet-IA-gen.git
+  git clone <url-du-projet>
 
 Avant de lancer le projet, ouvrez un nouveau terminal depuis VS Code afin d'installer les bibliothèques nécessaires du fichier requirements. Faites :
 
