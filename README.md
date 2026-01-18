@@ -61,7 +61,7 @@ Exécuter les deux codes qui pour vérifier que les modèles sont bien installé
 
 Ouvrez le projet avec VS Code. Via le terminal, faites :
 
-  git clone <url-du-projet>
+  git clone "url-du-projet"
 
 Avant de lancer le projet, ouvrez un nouveau terminal depuis VS Code afin d'installer les bibliothèques nécessaires du fichier requirements. Faites :
 
@@ -128,5 +128,6 @@ Pas de gestion multi-PDF ou multi-utilisateur,
 Performances dépendantes de la machine (CPU/RAM),
 
 Pas de citations précises ligne/paragraphe (uniquement du contexte global),
+
 
 PDF scannés (images) non supportés sans OCR.
