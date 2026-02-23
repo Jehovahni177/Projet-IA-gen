@@ -44,35 +44,44 @@ Avant d’installer le projet, assurez-vous d’avoir :
 
 Via un terminal (par exemple, PowerShell), exécuter la commande suivante afin de lancer Ollama :
 
+```
   ollama serve
+```
 
 Laisser la fenêtre précédente ouverte. Ouvrez une nouvelle fenêtre et exécuter le code ci-dessous afin de vérifier qu'Ollama est bien lancé :
 
+```
   ollama list
+```
 
-Exécuter les deux codes qui suivent pour vérifier que les modèles sont bien installés : 
+Exécuter les deux codes qui pour vérifier que les modèles sont bien installés : 
 
+```
   ollama pull mistral
-  
   ollama pull nomic-embed-text
-
+```
 ---
 
 ## Projet
 
 Ouvrez le projet avec VS Code. Via le terminal, faites :
 
-  git clone https://github.com/Jehovahni177/Projet-IA-gen.git
+```
+  git clone "url-du-projet"
+```
 
 Avant de lancer le projet, ouvrez un nouveau terminal depuis VS Code afin d'installer les bibliothèques nécessaires du fichier requirements. Faites :
 
+```
   pip install -r requirements.txt
-  
   pip install streamlit langchain langchain-community langchain-text-splitters langchain-ollama faiss-cpu pypdf
+```
 
 Lancer le projet en exécutant dans le terminal le code ci-après :
 
+```
   python -m streamlit run app.py
+```
 
 Copiez l'adresse indiquée dans votre barre de recherche pour ouvrir l'application.
 
@@ -82,57 +91,68 @@ Copiez l'adresse indiquée dans votre barre de recherche pour ouvrir l'applicati
 
 ## Choix techniques
 
-   Streamlit
+**Streamlit**
 
-Interface rapide à développer,
+- Interface rapide à développer,
 
-Idéal pour les prototypes IA interactifs,
+- Idéal pour les prototypes IA interactifs,
 
-Gestion simple du session_state.
-
-  
-   LangChain
-
-Orchestration du pipeline RAG,
-
-Découplage clair entre chargement, découpage, recherche et génération.
+- Gestion simple du session_state.
 
   
-   Ollama (LLM local)
+**LangChain**
 
-Pas d’API externe → confidentialité totale,
+- Orchestration du pipeline RAG,
 
-Exécution en local (CPU ou GPU),
-
-Modèle Mistral choisi pour son bon compromis intelligence / vitesse.
+- Découplage clair entre chargement, découpage, recherche et génération.
 
   
-   FAISS
+**Ollama (LLM local)**
 
-Base vectorielle rapide et locale,
+- Pas d’API externe → confidentialité totale,
 
-Parfait pour des volumes de documents modérés (cours, polycopiés).
+- Exécution en local (CPU ou GPU),
+
+- Modèle Mistral choisi pour son bon compromis intelligence / vitesse.
 
   
-   Chunking (1000 / 200)
+**FAISS**
 
-Taille suffisante pour conserver du contexte,
+- Base vectorielle rapide et locale,
 
-Overlap pour éviter les ruptures sémantiques.
+- Parfait pour des volumes de documents modérés (cours, polycopiés).
+
+  
+**Chunking (1000 / 200)**
+
+- Taille suffisante pour conserver du contexte,
+
+- Overlap pour éviter les ruptures sémantiques.
 
 
 ## Eventuelles limitations
 
-Pas de persistance disque du vectorstore (rechargement à chaque redémarrage),
+- Pas de persistance disque du vectorstore (rechargement à chaque redémarrage),
 
-Pas de gestion multi-PDF ou multi-utilisateur,
+- Pas de gestion multi-PDF ou multi-utilisateur,
 
-Performances dépendantes de la machine (CPU/RAM),
+- Performances dépendantes de la machine (CPU/RAM),
 
-Pas de citations précises ligne/paragraphe (uniquement du contexte global),
+- Pas de citations précises ligne/paragraphe (uniquement du contexte global),
 
+- PDF scannés (images) non supportés sans OCR.
 
-PDF scannés (images) non supportés sans OCR.
+---
 
+## Auteur
 
+**Jéhovahni SODJINOU**  
+Étudiant UTT - Mastère Spécialisé Expert Big Data Engineer
 
+## Licence
+
+Ce projet est réalisé à des fins éducatives pour l'UTT.
+
+---
+
+**Dernière mise à jour :** Février 2026
